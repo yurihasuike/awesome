@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+<ImageView
+    android:id="@+id/edittingprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="edittingprofile_background"
+    android:scaleType="fitXY" />
+
+<TextView
+android:id="@+id/edittingprofile1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/edittingprofile"
+android:layout_alignTop="@+id/edittingprofile"
+android:layout_alignRight="@+id/edittingprofile"
+android:layout_alignBottom="@+id/edittingprofile"
+android:layout_margin="1dp"
+android:gravity="center"
+android:text="Profile"
+android:textColor="#FFFFFF"
+android:background="#F2B98F" />
+
+<EditText
+android:hint="Username"
+android:id="@+id/usernametext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Email"
+android:id="@+id/mailEdit"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Password"
+android:id="@+id/passEdit"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Introduction"
+android:id="@+id/introductiontext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Edit Password"
+android:id="@+id/editpasswordtext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Area"
+android:id="@+id/areatext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Birthday"
+android:id="@+id/birthdaytext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Sex"
+android:id="@+id/sextext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Twitter"
+android:id="@+id/twittertext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+<EditText
+android:hint="Facebook"
+android:id="@+id/facebooktext"
+android:inputType="text"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="EditTextTest">
+</EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/saved"
+        android:text="EditTextTest" />
+    <TextView
+        android:id="@+id/saved1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saved"
+        android:layout_alignTop="@+id/saved"
+        android:layout_alignRight="@+id/saved"
+        android:layout_alignBottom="@+id/saved"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="#FFFFFF"
+        android:background="#F2B98F" />
+
+</LinearLayout>

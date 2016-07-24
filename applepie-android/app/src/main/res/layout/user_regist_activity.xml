@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginBackground"
+        android:src="@drawable/login"
+        android:contentDescription="login_background"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/registButton"
+        android:contentDescription="regist_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/round_button"
+        android:layout_below="@+id/termsCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="100dp"
+        android:text="新規登録"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nicknameEdit"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/edit_text_style"
+        android:hint="ニックネーム"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mailEdit"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/edit_text_style"
+        android:hint="メールアドレス"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_below="@+id/nicknameEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/usernameEdit"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/edit_text_style"
+        android:hint="ユーザーID（半角英数）"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_below="@+id/mailEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passEdit"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="パスワード（半角英数8字以上）"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/usernameEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新規登録"
+        android:textColor="#dc2e2e2e"
+        android:id="@+id/loginText"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="プライバシーポリシー"
+        android:id="@+id/privacy_link"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/registButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="利用規約"
+        android:id="@+id/terms_link"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/privacy_link"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="利用規約に同意する"
+        android:id="@+id/termsCheckBox"
+        android:layout_below="@+id/passEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ログイン（すでにアカウントをお持ちの方）"
+        android:id="@+id/loginLink"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/terms_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/icon"
+        android:layout_below="@+id/loginText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="false"
+        android:background="@null"
+        android:src="@drawable/no_user"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>
