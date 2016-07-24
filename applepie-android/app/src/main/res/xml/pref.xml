@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="サポート">
+        <PreferenceScreen
+            android:title="アカウントの切り替え"
+            android:summary="美容師・ネイリストの方"
+            android:key="pro_account">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="プロフィール設定"
+            android:key="profile">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="お問い合わせ"
+            android:key="contact">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="プライバシーポリシー"
+            android:key="policy">
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="サービス規約"
+            android:key="terms">
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="その他">
+        <PreferenceScreen
+            android:title="ログアウト"
+            android:key="logout">
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

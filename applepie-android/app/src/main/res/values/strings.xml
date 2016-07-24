@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">myreco up</string>
+    <string name="action_settings">Settings</string>
+
+    <!--dev環境-->
+    <!--ServiceGenerator.javaのAPI先も一緒に変更する-->
+    <string name="base_url">https://updev.myreco.me/</string>
+
+    <!--本番環境-->
+    <!--ServiceGenerator.javaのAPI先も一緒に変更する-->
+    <!--<string name="base_url">https://up.myreco.me/</string>-->
+
+</resources>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginBackground"
+        android:src="@drawable/login"
+        android:contentDescription="login_background"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/loginButton"
+        android:contentDescription="login_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/round_button"
+        android:layout_below="@+id/passEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="100dp"
+        android:text="ログイン"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mailEdit"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/edit_text_style"
+        android:hint="メールアドレス"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_below="@+id/loginText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passEdit"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="パスワード"
+        android:textColorHint="#D5D5D5"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/mailEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/cursor_style"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="#dc2e2e2e"
+        android:id="@+id/loginText"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="プライバシーポリシー"
+        android:id="@+id/privacy_link"
+        android:textColor="#ffffff"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="利用規約"
+        android:id="@+id/terms_link"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/privacy_link"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="パスワードを忘れた方はこちら"
+        android:id="@+id/forgotten_link"
+        android:textColor="#FE6C01"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/terms_link"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新規会員登録"
+        android:id="@+id/user_regist"
+        android:textColor="#FE6C01"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:singleLine="false"
+        android:layout_below="@+id/forgotten_link"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textIsSelectable="false" />
+
+</RelativeLayout>

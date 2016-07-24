@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1094834657308",
+    "firebase_url": "https://admob-app-id-8844838066.firebaseio.com",
+    "project_id": "admob-app-id-8844838066",
+    "storage_bucket": "admob-app-id-8844838066.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094834657308:android:5d6fe7e9b9f05183",
+        "android_client_info": {
+          "package_name": "me.myreco.up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094834657308-6gq2e89eo1i8njc1r4ufnakadk4bcmra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdtlYHVRpBzhHR63kNg7oPMBHsHak6jts"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
